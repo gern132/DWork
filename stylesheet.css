@@ -684,21 +684,31 @@ width: 30%;
     padding-top: 12%;
 }
 svg {
-    padding-right: 10%;
+    margin-right: 10%;
+    cursor: pointer;
+    fill:  #919295;
+    transition: .3s;
+}
+svg:hover {
+    transition: .3s;
+    fill:  #ffffff;
+    transform: scale(1.2);
 }
 
-/* .footer__block-social:hover,
-svg:nth-child(1):hover {
-    background-color: rgb(71, 227, 255);
-} */
+
+svg:nth-child(1):hover .footer__block-social {
+    background-color: rgb(129, 13, 195);
+}
+
+
 /* .footer__block-social:hover {
     background: #111922;
 } */
 
-[class*="footer__block-social"]:hover {
+/* [class*="footer__block-social"]:hover {
     background: rgb(71, 227, 255);
-}
+} */
 
 svg:nth-child(4){
-    padding-right: 0;
+    margin-right: 0;
 }
