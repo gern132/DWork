@@ -12,36 +12,41 @@
         <div class="header__block"></div>
             <div class="header__block-scroll">
                 <div class="header__block-logo">
-                    <img src="img/w.svg">
+                    <img alt="Логотип сайта" title="Логотип сайта" src="img/w.svg">
                 </div>
                 <div  class="header__block-menu">
-                    <span><i class="fas fa-bars"></i></span>
+                    <span class="header-logo"><i class="fas fa-bars"></i></span>
                 </div>
             </div>
-            <div class="headr__block-mp4">
-                <div class="headr__block-video">
-                    <video autoplay muted loop width="100%" class="myvideo">
-                        <source src="background2.mp4" type="video/mp4">
-                    </video>
+            <!-- mobile_scroll -->
+            <div class="header__mobile-scroll">
+                <div class="header__mobile-position">
+                    <img alt="Логотип сайта" title="Логотип сайта" src="img/w.svg">
+                    <span class="header-logo-mobile"><i class="fas fa-bars"></i></span>
                 </div>
-                <div class="header__block-text">
-                    <div class="header__text">
-                        <p>мы найдём</p>
-                        <p>то</p>
-                        <p>что тебе нравится.</p>
+            </div>
+
+            <div class="header__background">
+                <div class="headr__block-mp4">
+                        <video autoplay muted loop width="100%" class="myvideo" src="background2.mp4"></video>
+                    <div class="header__block-text">
+                        <div class="header__text">
+                            <p>мы найдём</p>
+                            <p>то</p>
+                            <p>что тебе нравится.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="header__block-input">
-                    <input type="text" class="search__input" placeholder="Поиск...">
-                    <div class="header__search-button">
-                        <p>найти</p>
+                    <div class="header__block-input">
+                        <input type="text" class="search__input" placeholder="Поиск...">
+                        <div class="header__search-button">
+                            <p>найти</p>
+                        </div>
                     </div>
                 </div>
             </div>
     </div>
 
     <div class="block__choice">
-        <div class="fixed"></div>
         <div class="block__choice-flex">
             <div class="block__choice-job">
                 <img alt="в поиске работы" title="в поиске работы" src="img/job.png">
@@ -52,10 +57,8 @@
                 </div>
             </div>
             <div class="block__choice-description">
-                <!-- <div class="block__choice-inside"> -->
                     <p>Благодаря нашему ресурсу мы&nbsp;сможете обрести любимую работу.</p><br />
                     <p>Здесь вы&nbsp;найдёте лучших работодателей и&nbsp;лучших сотрудников, а&nbsp;мы&nbsp;сделаем всё , чтобы вы&nbsp;нашли друг друга.</p>
-                <!-- </div> -->
             </div>
             <div class="block__choice-job">
                 <img alt="в поиске людей" title="в поиске людей" src="img/people.png">
@@ -67,10 +70,13 @@
             </div>
         </div>
     </div>
-    <div class="job">
-        <div class="fixed">
-
+    <div class="block__choice-description">
+        <div class="mobile__choice">
+            <p>Благодаря нашему ресурсу мы&nbsp;сможете обрести любимую работу.</p><br />
+            <p>Здесь вы&nbsp;найдёте лучших работодателей и&nbsp;лучших сотрудников, а&nbsp;мы&nbsp;сделаем всё , чтобы вы&nbsp;нашли друг друга.</p>
         </div>
+    </div>
+    <div class="job">
         <div class="job__block">
             <div class="job__header-text">
                 <p>наши</p>
@@ -78,7 +84,6 @@
             </div>
             <div class="job__vacancys">
                 <div class="job__vacancys-outside">
-                    <div class="job__vacancys-inside">
                         <div class="block__vacancy">
                             <div class="block__vacancy-header">
                                 <p>Front-end</p>
@@ -93,11 +98,10 @@
                                 <p class="location">Площадь Якуба Коласа, Минск, улица Кульман, 9</p>
                                 <h5>Полный рабочий день</h5>
                             </div>
-                            <div class="block__vakancy-button">
+                            <div class="block__vakancy-button ">
                                 <p>откликнуться</p>
                             </div>
                         </div>
-                    </div>
                 </div>
 
                 <div class="job__vacancys-outside">
@@ -173,25 +177,20 @@
     </div>
 <!-- underline -->
     <div class="block__underline">
-        <div class="fixed"></div>
         <div class="underlune"></div>
     </div>
     <!-- center_image -->
     <div class="center__image">
-        <div class="fixed"></div>
         <img src="img/center1.png">
     </div>  
     <!-- WORKUP_block -->
     <div class="center__block">
-        <div class="fixed"></div>
             <h1>workup</h1>
     </div>
 
     <!-- recom -->
 
     <div class="review">
-        <div class="fixed1"></div>
-
         <div class="reviews">
             <div class="review__block">
                 <h1>Благодарность</h1>
@@ -227,10 +226,9 @@
             </div>
 
             <div class="articles__main">
-                <div></div>
                 <div class="article__block">
                     <div class="article__main-inform">
-                        <img src="img/art1.png">
+                        <img alt="Работа" title="Работа" src="img/art1.png">
                         <h4>Статья</h4>
                         <p>17 советов как устроиться на новую работу.</p>
                     </div>
@@ -242,7 +240,7 @@
 
                 <div class="article__block">
                     <div class="article__main-inform">
-                        <img src="img/art2.png">
+                        <img alt="Перове резюме" title="Первое резюме" src="img/art2.png">
                         <h4>Статья</h4>
                         <p>Как правильно написать своё первое резюме?</p>
                     </div>
@@ -254,7 +252,7 @@
                 
                 <div class="article__block">
                     <div class="article__main-inform">
-                        <img src="img/art3.png">
+                        <img alt="Добро пожаловать" title="Добро пожаловать" src="img/art3.png">
                         <h4>Статья</h4>
                         <p>Парочка советов как легко адаптироваться на новой работе </p>
                     </div>
@@ -266,7 +264,7 @@
 
                 <div class="article__block">
                     <div class="article__main-inform">
-                        <img src="img/art4.png">
+                        <img alt="Работа и отдых" title="Работа и отдых" src="img/art4.png">
                         <h4>Статья</h4>
                         <p>Как найти грань между работой и отдыхом?</p>
                     </div>
@@ -282,9 +280,8 @@
     <!-- help -->
 
     <div class="help">
-        <div class="fixed"></div>
         <div class="help__block-mini">
-            <img class="help-logo" src="img/w.svg">
+            <img alt="Логотип сайта" title="Логотип сайта" class="help-logo" src="img/w.svg">
             <h3>наша</h3>
             <h1>история</h1>
             <p>Мы были созданы для того чтобы сделать вашу жизнь немного проще , мы сумели отсеить всё самое ненужное и собрали для вас лучшее из лучшего.<br /><br />
@@ -295,27 +292,32 @@
             <h1>мы здесь чтобы</h1>
             <h2>помогать</h2>
             <div class="help__contact">
-                <p>отправь сообщение</p>
-                <p>чат телеграм</p>
-                <p>запроси звонок</p>
+                <div>
+                    <p>отправь сообщение</p>
+                </div>
+                <div>
+                    <p>чат телеграм</p>
+                </div>
+                <div>
+                    <p>запроси звонок</p>
+                </div>
             </div>
         </div>
         <div class="help__block-mini">
-            <img class="help-logo" src="img/w.svg">
+            <img alt="Логотип сайта" title="Логотип сайта" class="help-logo" src="img/w.svg">
             <h3>наши</h3>
             <h1>спонсоры</h1>
             <div class="help__images">
-                <img class="help-spons" src="img/yandex.png">
-                <img class="help-spons" src="img/master.png">
-                <img class="help-spons" src="img/micro.png">
-                <img class="help-spons" src="img/alfa.png">
+                <img class="help-spons" alt="Логотип Яндекс" title="Логотип Яндекс" src="img/yandex.png">
+                <img class="help-spons" alt="Логотип Мастеркард" title="Логотип Мастеркард" src="img/master.png">
+                <img class="help-spons" alt="Логотип Микрософт" title="Логотип Микрософт" src="img/micro.png">
+                <img class="help-spons" alt="Логотип Альфа банк" title="Логотип Альфа банк" src="img/alfa.png">
             </div>
         </div>
     </div>
 
     <!-- footer -->
 <div class="footer">
-    <div class="fixed"></div>
         <div class="footer__block-location">
             <div class="footer__block">
                 <div class="footer__adres">
