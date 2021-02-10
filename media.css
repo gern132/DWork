@@ -27,6 +27,26 @@
     }
 }
 @media (max-width: 1510px) {
+    .footer-text h4 {
+        font-size: calc(12px + 4 * (100vw / 1920)) !important;
+    }
+    .burger__block-date {
+        font-size: calc(10px + 2 * (100vw / 1920)) !important;
+    }
+    .burger__block-middle {
+        font-size: calc(10px + 10 * (100vw / 1920)) !important;
+    }
+    .burger__block-menu h2,
+    .login {
+        font-size: calc(10px + 16 * (100vw / 1920)) !important;
+    }
+    .burger__block-menu h1:nth-child(2),
+    .burger__block-menu h1:nth-child(3) {
+    font-size: calc(7px + 43 * (100vw / 1920)) !important;
+}
+    .burger__block-menu h1:nth-child(1) {
+        font-size: calc(20px + 44 * (100vw / 1920)) !important;
+    }
     .block__switch {
         height: 110px !important; 
     }
@@ -66,7 +86,7 @@
     .block__choice-description {
         display: none;
     }
-    .block__choice-description:nth-child(3) {
+    .block__choice-description-under {
         display: block !important;
     }
     .block__choice-job:nth-child(1) {
@@ -176,6 +196,9 @@
     }
 }
 @media (max-width: 1000px) {
+    .burger-cancle {
+        width: 30px !important;
+    }
     .block__switch {
         height: 90px !important; 
     }
@@ -200,6 +223,41 @@
     } */
 }
 @media (max-width: 700px) {
+    /* .work__menu h1:nth-child(2){
+        font-size: calc(1px + 44 * (100vw /1920)) !important;
+    } */
+    .work-info {
+        width: 100% !important;
+        overflow: visible !important;
+    }
+    .work-open {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    .scroll-cancle {
+        position: fixed;
+    }
+    .burger-cancle {
+        width: 25px !important;
+    }
+    .burger-cancle {
+        margin-top: 0 !important;
+    }
+    .burger__block-cancel {
+        width: 100% !important;
+        height: 8% !important;
+    }
+    .burger {
+        z-index: 100 !important;
+        flex-direction: column !important;
+    }
+    .burger__block-menu {
+        width: 100% !important;
+        height: 100vh !important;
+    }
+    .burger__block-news {
+        display: none !important;
+    }
     .block__switch {
         height: 75px !important; 
     }

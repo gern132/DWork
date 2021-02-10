@@ -75,7 +75,7 @@ const leftArrow = document.querySelector('.left'),
     const getTop = () => window.scrollY;
 let strela = document.querySelector('.arrow');
 let hide = document.querySelector('.arrow-hidden');
-let check = 2600;
+let check = 2000;
 
 const updateDashoffset = () => {};
 window.addEventListener('scroll', () => {
@@ -132,3 +132,53 @@ const arrowRight = document.querySelector('.right-0'),
         plus1.style.transition = '.3s';
         arrowRight1.style.transition = '.3s';
     });
+// burger 
+
+let menu = document.querySelector('.header-logo'),
+    menuMobile = document.querySelector('.header-logo-mobile'),
+    burger = document.querySelector('.burger-open'),
+    cancle = document.querySelector('.burger-cancle'),
+    body = document.body;
+
+    function disable() {
+        body.classList.add('dis');
+    }
+    function enable() {
+        body.classList.remove('dis');
+    }
+
+    menuMobile.addEventListener('click', (ds) => {
+        burger.style.opacity = '1';
+        burger.style.visibility = 'visible';
+        disable();
+    });
+
+    menu.addEventListener('click', (ds) => {
+        burger.style.opacity = '1';
+        burger.style.visibility = 'visible';
+        disable();
+    });
+
+    cancle.addEventListener('click', () => {
+        burger.style.opacity = '';
+        burger.style.visibility = '';
+        enable();
+    });
+
+    // article-open
+
+    let click = document.querySelector('.first-vakansy'),
+        cancleS = document.querySelector('.cancle'),
+        workOpen =  document.querySelector('.work-open');  
+        
+        click.addEventListener('click', (ds) => {
+            workOpen.style.opacity = '1';
+            workOpen.style.visibility = 'visible';
+            disable();
+        });
+    
+        cancleS.addEventListener('click', () => {
+            workOpen.style.opacity = '';
+            workOpen.style.visibility = '';
+            enable();
+        });
