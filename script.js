@@ -182,3 +182,51 @@ let menu = document.querySelector('.header-logo'),
             workOpen.style.visibility = '';
             enable();
         });
+
+        let click1 = document.querySelector('.second-vacansy'),
+        cancleS1 = document.querySelector('.cancle1'),
+        workOpen1 =  document.querySelector('.work-open1');
+        
+        click1.addEventListener('click', (ds) => {
+            workOpen1.style.opacity = '1';
+            workOpen1.style.visibility = 'visible';
+            disable();
+        });
+    
+        cancleS1.addEventListener('click', () => {
+            workOpen1.style.opacity = '';
+            workOpen1.style.visibility = '';
+            enable();
+        });
+
+        let click2 = document.querySelector('.third-vacansy'),
+        cancleS2 = document.querySelector('.cancle2'),
+        workOpen2 =  document.querySelector('.work-open2');
+
+        click2.addEventListener('click', (ds) => {
+            workOpen2.style.opacity = '1';
+            workOpen2.style.visibility = 'visible';
+            disable();
+        });
+    
+        cancleS2.addEventListener('click', () => {
+            workOpen2.style.opacity = '';
+            workOpen2.style.visibility = '';
+            enable();
+        });
+
+        let click3 = document.querySelector('.fourth-vacansy'),
+        cancleS3 = document.querySelector('.cancle3'),
+        workOpen3 =  document.querySelector('.work-open3');
+
+        click3.addEventListener('click', (ds) => {
+            workOpen3.style.opacity = '1';
+            workOpen3.style.visibility = 'visible';
+            disable();
+        });
+    
+        cancleS3.addEventListener('click', () => {
+            workOpen3.style.opacity = '';
+            workOpen3.style.visibility = '';
+            enable();
+        });
