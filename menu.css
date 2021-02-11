@@ -188,9 +188,6 @@
     color: var(--orange);
     margin: 10% 0 0 10%;
 }
-.work-open {
-    overflow: auto;
-}
 .work-info p,
 .work-info li {
     font-size: 18px;

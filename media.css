@@ -226,6 +226,7 @@
     /* .work__menu h1:nth-child(2){
         font-size: calc(1px + 44 * (100vw /1920)) !important;
     } */
+    
     .work-info {
         width: 100% !important;
         overflow: visible !important;
@@ -233,6 +234,7 @@
     .work-open {
         display: flex !important;
         flex-direction: column !important;
+        overflow: auto !important;
     }
     .scroll-cancle {
         position: fixed;
