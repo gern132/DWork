@@ -220,6 +220,9 @@
     margin: 0;
     transition: 0.4s;
 }
+.block__choice-img {
+    filter: saturate(-3);
+}
 .block__choice-job:hover img,
 .arrow-right:hover,
 .block__choice-job:hover .block__text-job h1{
@@ -365,6 +368,9 @@ flex-direction: column;
     text-transform: uppercase;
 }
 /* card vakancy */
+.new-articles {
+    display: none !important;
+}
 
 .job__vacancys {
     padding-top: 50px;
@@ -660,6 +666,7 @@ flex-direction: column;
 }
 .article__main-inform img {
     width: 100%;
+    height: 45%;
 }
 /* help */
 

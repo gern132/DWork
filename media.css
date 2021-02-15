@@ -27,6 +27,7 @@
     }
 }
 @media (max-width: 1510px) {
+
     .footer-text h4 {
         font-size: calc(12px + 4 * (100vw / 1920)) !important;
     }
@@ -38,8 +39,9 @@
     }
     .burger__block-menu h2,
     .login {
-        font-size: calc(10px + 16 * (100vw / 1920)) !important;
+        font-size: calc(15px + 16 * (100vw / 1920)) !important;
     }
+    .news-menu span,
     .burger__block-menu h1:nth-child(2),
     .burger__block-menu h1:nth-child(3) {
     font-size: calc(7px + 43 * (100vw / 1920)) !important;
@@ -89,6 +91,9 @@
     .block__choice-description-under {
         display: block !important;
     }
+    .mobile__choice {
+        font-size: calc(5px + 21 * (100vw / 1920)) !important;
+    }
     .block__choice-job:nth-child(1) {
         margin-right: 1.5%;
     }
@@ -131,7 +136,7 @@
         width: 250px !important;
         height: 400px !important;
         padding: 0.5% !important;
-        margin-top: 5% !important;
+        margin: 5% 3.5% 0 3.5% !important;
     }
 }
 @media (max-width: 1250px) {
@@ -161,36 +166,78 @@
     }
     .help__block-mini p {
         font-size: calc(4px + 19 * (100vw /1920)) !important;
+        padding: 5% !important;
     }
     .help__block-main h1 {
         font-size: calc(11px + 33 * (100vw /1920)) !important;
+        padding-top: 5%;
     }
     .help__block-main h2 {
         font-size: calc(11px + 33 * (100vw /1920)) !important;
     }
-    .help__contact {
+    .help__block-main p {
+        font-size: calc(11px + 13 * (100vw /1920)) !important;
+    }
+    /* .help__contact {
         padding: 10% 5% 0 5%;
         display: flex;
         flex-direction: column !important;
         font-size: calc(8px + 16 * (100vw /1920)) !important;
+    } */
+    .help {
+        flex-direction: column;
     }
-    .help__block-mini img {
+    .help__block-mini {
+        width: 100% !important;
+        }
+        .help__block-main { 
+            width: 100% !important;
+        }
+        .help__block-mini img {
+            width: 3%;
+        }
+        .help__images img {
+            width: 15% !important;
+        }
+        .help-spons {
+            padding-top: 3% !important;
+        } 
+        .help__images {
+            text-align: center;
+            padding-bottom: 5% !important;
+        }
+        
+        .help__contact {
+            padding: 5% 5% 5% 5% !important;
+        }
+        .help__contact div:nth-child(2) {
+            border-top: 2px solid rgb(255, 255, 255) !important;
+            border-bottom: 2px solid rgb(255, 255, 255) !important;
+            border-top: none !important;
+            border-bottom: none !important;
+            margin-right: 15px;
+            margin-left: 15px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        
+    /* .help__block-mini img {
         width: 30%;
-    }
-    .help__images img {
+    } */
+    /* .help__images img {
         width: 50% !important;
-    }
+    } */
     .help__contact div {
         padding: 3% !important;
     }
-    .help__contact div:nth-child(2) {
+    /* .help__contact div:nth-child(2) {
         border-right: 0 !important;
         border-left: 0 !important;
         border-top: 2px solid rgb(255, 255, 255);
         border-bottom: 2px solid rgb(255, 255, 255);
         margin-right: 15% !important;
         margin-left: 15% !important;
-    }
+    } */
     .center__image img {
         width: calc(100px + 951 * (100vw / 1920)) !important;
     }
@@ -226,6 +273,42 @@
     /* .work__menu h1:nth-child(2){
         font-size: calc(1px + 44 * (100vw /1920)) !important;
     } */
+    .work-info p {
+        font-size: 14px !important;
+    }
+    .work-info h1 {
+        font-size: 19px !important;
+    }
+    .news-article {
+        margin: 0 !important;
+        text-align: center !important;
+        color: var(--text-light);
+    }
+    .news {
+        display: flex !important;
+        flex-direction: column !important;
+        overflow: auto !important;
+    }
+    .work-open {
+        display: flex !important;
+        flex-direction: column !important;
+        overflow: auto !important;
+    }
+    .work-open1 {
+        display: flex !important;
+        flex-direction: column !important;
+        overflow: auto !important;
+    }
+    .work-open2 {
+        display: flex !important;
+        flex-direction: column !important;
+        overflow: auto !important;
+    }
+    .work-open3 {
+        display: flex !important;
+        flex-direction: column !important;
+        overflow: auto !important;
+    }
     
     .work-info {
         width: 100% !important;

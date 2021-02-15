@@ -89,7 +89,6 @@
     padding-top: 15%;
     font-size: 28px;
     color: var(--text-ld);
-    text-align: center;
 }
 .login h3:nth-child(2) {
     margin-top: 3%;
@@ -197,4 +196,29 @@
 .work-info ul,
 .work-info p {
     margin-top: 5%;
+}
+/* news */
+.news {
+    opacity: 0;
+    visibility: hidden;
+}
+.news-menu {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 45%;
+}
+.news-menu span {
+    color: var(--text-light);
+    font-weight: 300;
+    text-transform: none;
+    font-size: 40px;
+}
+.news-menu p {
+    color: var(--text-dark);
+    padding-top: 3%;
+}
+.news-article {
+    margin: 0 5% 20% 25%;
+    text-align: none;
+    color: var(--text-light);
 }
