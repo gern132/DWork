@@ -264,3 +264,6 @@
     background: #b96600;
     transition: .3s; 
 }
+.hide {
+    display: none;
+}
