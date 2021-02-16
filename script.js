@@ -245,7 +245,7 @@ let menu = document.querySelector('.header-logo'),
             exist.addEventListener('click', () => {
                 news.style.opacity = '';
                 news.style.visibility = '';
-                enable();
+                disable();
             });
 
             let newsClick1 = document.querySelector('.read-1'),
@@ -255,13 +255,13 @@ let menu = document.querySelector('.header-logo'),
             function fClick1() {
                 news.style.opacity = '1';
                 news.style.visibility = 'visible';
-                disable();
+                // disable();
             }
         
             exist1.addEventListener('click', () => {
                 news1.style.opacity = '';
                 news1.style.visibility = '';
-                enable();
+                // enable();
             });
 
             let newsClick2 = document.querySelector('.read-2'),
@@ -271,13 +271,13 @@ let menu = document.querySelector('.header-logo'),
             function fClick2() {
                 news.style.opacity = '1';
                 news.style.visibility = 'visible';
-                disable();
+                // disable();
             }
         
             exist2.addEventListener('click', () => {
                 news2.style.opacity = '';
                 news2.style.visibility = '';
-                enable();
+                // enable();
             });
 
             let newsClick3 = document.querySelector('.read-3'),
@@ -287,13 +287,13 @@ let menu = document.querySelector('.header-logo'),
             function fClick3() {
                 news.style.opacity = '1';
                 news.style.visibility = 'visible';
-                disable();
+                // disable();
             }
 
             exist3.addEventListener('click', () => {
                 news3.style.opacity = '';
                 news3.style.visibility = '';
-                enable();
+                // enable();
             });
             // + articles
             let i = 1510;
@@ -302,20 +302,49 @@ let menu = document.querySelector('.header-logo'),
             let vakJob2 = document.querySelector('.article-2');
 
             const getTop1 = () => innerWidth;
-            let strela1 = document.querySelector('.arrow'),
-                hide1 = document.querySelector('.arrow-hidden');
-
 const updateDashoffset1 = () => {};
 window.addEventListener('scroll', () => {
     updateDashoffset1();
 
-if (getTop1() > i) {
-    vakJob.classList.add('new-articles');
-    vakJob1.classList.add('new-articles');
-    vakJob2.classList.add('new-articles');
-}else {
-    vakJob.classList.remove('new-articles');
-    vakJob1.classList.remove('new-articles');
-    vakJob2.classList.remove('new-articles');
-}
+    if (getTop1() > i) {
+        vakJob.classList.add('new-articles');
+        vakJob1.classList.add('new-articles');
+        vakJob2.classList.add('new-articles');
+    }else {
+        vakJob.classList.remove('new-articles');
+        vakJob1.classList.remove('new-articles');
+        vakJob2.classList.remove('new-articles');
+    }
+});
+
+let searchJob = document.querySelector('.search__job'),
+    exist4 = document.querySelector('.exist4'),
+    searchPeople = document.querySelector('.search__people'),
+    exist5 = document.querySelector('.exist5');
+
+
+arrowRight.addEventListener('click', () => {
+    searchJob.style.opacity = '1';
+    searchJob.style.visibility = 'visible';
+    disable();
+});
+
+exist4.addEventListener('click', () => {
+    searchJob.style.opacity = '';
+    searchJob.style.visibility = '';
+    enable();
+});
+
+// people
+
+arrowRight1.addEventListener('click', () => {
+    searchPeople.style.opacity = '1';
+    searchPeople.style.visibility = 'visible';
+    disable();
+});
+
+exist5.addEventListener('click', () => {
+    searchPeople.style.opacity = '';
+    searchPeople.style.visibility = '';
+    enable();
 });

@@ -243,6 +243,15 @@
     }
 }
 @media (max-width: 1000px) {
+    .search-text h3 {
+        font-size: calc(10px + 38 * (100vw / 1920)) !important;
+    }
+    /* .search-text h1:nth-child(1) {
+        font-size: calc(30px + 114 * (100vw / 1920)) !important;
+    } */
+    .search-text h1:nth-child(2) {
+        font-size: calc(13px + 114 * (100vw / 1920)) !important;
+    }
     .burger-cancle {
         width: 30px !important;
     }
@@ -270,6 +279,15 @@
     } */
 }
 @media (max-width: 700px) {
+    .block__choice-description-under {
+        margin: 1% 0 0 0 !important;
+        width: 100% !important;
+    }
+    
+    .search-text {
+        margin: 45% 0 0 20% !important;
+    }
+    
     /* .work__menu h1:nth-child(2){
         font-size: calc(1px + 44 * (100vw /1920)) !important;
     } */
