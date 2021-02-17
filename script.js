@@ -253,8 +253,8 @@ let menu = document.querySelector('.header-logo'),
             news1 =  document.querySelector('.news1');
 
             function fClick1() {
-                news.style.opacity = '1';
-                news.style.visibility = 'visible'; 
+                news1.style.opacity = '1';
+                news1.style.visibility = 'visible'; 
                 disable();
             }
         
@@ -269,8 +269,8 @@ let menu = document.querySelector('.header-logo'),
             news2 =  document.querySelector('.news2');
 
             function fClick2() {
-                news.style.opacity = '1';
-                news.style.visibility = 'visible';
+                news2.style.opacity = '1';
+                news2.style.visibility = 'visible';
                 disable();
             }
         
@@ -285,8 +285,8 @@ let menu = document.querySelector('.header-logo'),
             news3 =  document.querySelector('.news3');
 
             function fClick3() {
-                news.style.opacity = '1';
-                news.style.visibility = 'visible';
+                news3.style.opacity = '1';
+                news3.style.visibility = 'visible';
                 disable();
             }
 
