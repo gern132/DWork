@@ -27,6 +27,15 @@
     }
 }
 @media (max-width: 1510px) {
+    .footer-text {
+        display: none !important;
+    }
+    .search-text h3 {
+        font-size: calc(10px + 38 * (100vw / 1920)) !important;
+    }
+    .search-text h1:nth-child(2) {
+        font-size: calc(13px + 114 * (100vw / 1920)) !important;
+    }
 
     .footer-text h4 {
         font-size: calc(12px + 4 * (100vw / 1920)) !important;
@@ -178,12 +187,6 @@
     .help__block-main p {
         font-size: calc(11px + 13 * (100vw /1920)) !important;
     }
-    /* .help__contact {
-        padding: 10% 5% 0 5%;
-        display: flex;
-        flex-direction: column !important;
-        font-size: calc(8px + 16 * (100vw /1920)) !important;
-    } */
     .help {
         flex-direction: column;
     }
@@ -220,38 +223,14 @@
             padding-left: 15px;
             padding-right: 15px;
         }
-        
-    /* .help__block-mini img {
-        width: 30%;
-    } */
-    /* .help__images img {
-        width: 50% !important;
-    } */
     .help__contact div {
         padding: 3% !important;
     }
-    /* .help__contact div:nth-child(2) {
-        border-right: 0 !important;
-        border-left: 0 !important;
-        border-top: 2px solid rgb(255, 255, 255);
-        border-bottom: 2px solid rgb(255, 255, 255);
-        margin-right: 15% !important;
-        margin-left: 15% !important;
-    } */
     .center__image img {
         width: calc(100px + 951 * (100vw / 1920)) !important;
     }
 }
 @media (max-width: 1000px) {
-    .search-text h3 {
-        font-size: calc(10px + 38 * (100vw / 1920)) !important;
-    }
-    /* .search-text h1:nth-child(1) {
-        font-size: calc(30px + 114 * (100vw / 1920)) !important;
-    } */
-    .search-text h1:nth-child(2) {
-        font-size: calc(13px + 114 * (100vw / 1920)) !important;
-    }
     .burger-cancle {
         width: 30px !important;
     }
@@ -274,9 +253,6 @@
     .job__header-text h1 {
         font-size: calc(22px + 42 * (100vw /1920)) !important;
     }
-    /* .center__image img {
-        width: calc(100px + 951 * (100vw / 1920)) !important;
-    } */
 }
 @media (max-width: 700px) {
     .block__choice-description-under {
@@ -287,10 +263,6 @@
     .search-text {
         margin: 45% 0 0 20% !important;
     }
-    
-    /* .work__menu h1:nth-child(2){
-        font-size: calc(1px + 44 * (100vw /1920)) !important;
-    } */
     .work-info p {
         font-size: 14px !important;
     }

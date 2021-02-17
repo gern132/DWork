@@ -254,14 +254,14 @@ let menu = document.querySelector('.header-logo'),
 
             function fClick1() {
                 news.style.opacity = '1';
-                news.style.visibility = 'visible';
-                // disable();
+                news.style.visibility = 'visible'; 
+                disable();
             }
         
             exist1.addEventListener('click', () => {
                 news1.style.opacity = '';
                 news1.style.visibility = '';
-                // enable();
+                enable();
             });
 
             let newsClick2 = document.querySelector('.read-2'),
@@ -271,13 +271,13 @@ let menu = document.querySelector('.header-logo'),
             function fClick2() {
                 news.style.opacity = '1';
                 news.style.visibility = 'visible';
-                // disable();
+                disable();
             }
         
             exist2.addEventListener('click', () => {
                 news2.style.opacity = '';
                 news2.style.visibility = '';
-                // enable();
+                enable();
             });
 
             let newsClick3 = document.querySelector('.read-3'),
@@ -287,13 +287,13 @@ let menu = document.querySelector('.header-logo'),
             function fClick3() {
                 news.style.opacity = '1';
                 news.style.visibility = 'visible';
-                // disable();
+                disable();
             }
 
             exist3.addEventListener('click', () => {
                 news3.style.opacity = '';
                 news3.style.visibility = '';
-                // enable();
+                enable();
             });
             // + articles
             let i = 1510;
@@ -352,18 +352,18 @@ exist5.addEventListener('click', () => {
 
 // ------------------------------
 
-// var lastResFind=""; // последний удачный результат
-// var copy_page=""; // копия страницы в ихсодном виде
+// var lastResFind=""; 
+// var copy_page=""; 
 // function TrimStr(s) {
 //     s = s.replace( /^\s+/g, '');
 // return s.replace( /\s+$/g, '');
 // }
-// function FindOnPage(inputId) {//ищет текст на странице, в параметр передается ID поля для ввода
+// function FindOnPage(inputId) {
 // var obj = window.document.getElementById(inputId);
 // var textToFind;
 
 // if (obj) {
-//     textToFind = TrimStr(obj.value);//обрезаем пробелы
+//     textToFind = TrimStr(obj.value);
 // } else {
 //     alert("Введенная фраза не найдена");
 //     return;
@@ -381,28 +381,29 @@ exist5.addEventListener('click', () => {
 // else copy_page=document.body.innerHTML;
 
 
-// document.body.innerHTML = document.body.innerHTML.replace(eval("/name="+lastResFind+"/gi")," ");//стираем предыдущие якори для скрола
-//   document.body.innerHTML = document.body.innerHTML.replace(eval("/"+textToFind+"/gi"),"<a name="+textToFind+" style='background:red'>"+textToFind+"</a>"); //Заменяем найденный текст ссылками с якорем;
-//   lastResFind=textToFind; // сохраняем фразу для поиска, чтобы в дальнейшем по ней стереть все ссылки
-// window.location = '#'+textToFind;//перемещаем скрол к последнему найденному совпадению
+// document.body.innerHTML = document.body.innerHTML.replace(eval("/name="+lastResFind+"/gi")," ");
+//   document.body.innerHTML = document.body.innerHTML.replace(eval("/"+textToFind+"/gi"),"<a name="+textToFind+" style='background:red'>"+textToFind+"</a>"); 
+//   lastResFind=textToFind; 
+// window.location = '#'+textToFind;
 // }
+// ----------------------------
 
-window.onload = () => {
-    let input = document.querySelector('#text-to-find');
-    input.oninput = function () {
-        let value  = this.value.trim();
-        let list = document.querySelectorAll('.search-base');
+// window.onload = () => {
+//     let input = document.querySelector('#text-to-find');
+//     input.oninput = function () {
+//         let value  = this.value.trim();
+//         let list = document.querySelectorAll('.search-base');
         
-        if (value != '') {
-            list.forEach(e => {
-                if (e.innerText.search(value) == -1) {
-                    e.classList.add('hide');
-                }
-            });
-        } else {
-            list.forEach(e => {
-                e.classList.remove('hide');
-            });
-        }
-    }
-};
+//         if (value != '') {
+//             list.forEach(e => {
+//                 if (e.innerText.search(value) == -1) {
+//                     e.classList.add('hide');
+//                 }
+//             });
+//         } else {
+//             list.forEach(e => {
+//                 e.classList.remove('hide');
+//             });
+//         }
+//     }
+// };
