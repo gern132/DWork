@@ -79,16 +79,16 @@
         margin-left: 7.5% !important;
     }
     .review__block:nth-child(1) h1 {
-        font-size: calc(11px + 89 * (100vw / 1920)) !important;
+        font-size: calc(19px + 89 * (100vw / 1920)) !important;
     }
     .review__block:nth-child(2) p {
-        font-size: calc(3px + 21 * (100vw / 1920)) !important;
+        font-size: calc(8px + 21 * (100vw / 1920)) !important;
     }
     .review__switch {
         font-size: calc(4px + 26 * (100vw / 1920)) !important;
     }
     .review__block-text {
-        font-size: calc(3px + 33 * (100vw / 1920)) !important;
+        font-size: calc(8px + 33 * (100vw / 1920)) !important;
         width: 80% !important;
     }
     .fa-arrow-left {
@@ -174,7 +174,7 @@
         font-size: calc(9px + 33 * (100vw /1920)) !important;
     }
     .help__block-mini p {
-        font-size: calc(4px + 19 * (100vw /1920)) !important;
+        font-size: calc(8px + 19 * (100vw /1920)) !important;
         padding: 5% !important;
     }
     .help__block-main h1 {
@@ -227,7 +227,7 @@
         padding: 3% !important;
     }
     .center__image img {
-        width: calc(100px + 951 * (100vw / 1920)) !important;
+        width: calc(180px + 951 * (100vw / 1920)) !important;
     }
 }
 @media (max-width: 1000px) {
