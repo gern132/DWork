@@ -6,37 +6,32 @@ let firstSvg = document.querySelector('.first-svg'),
     bg = document.querySelector('.footer__block-social');
 
 firstSvg.addEventListener('mouseover', () => {
-    bg.style.background = ' rgb(71, 227, 255)';
-    bg.style.transition = '.3s';
+    bg.classList.add('active-footer');
 });
 firstSvg.addEventListener('mouseout', () => {
-    bg.style.background = '#111922';
-    bg.style.transition = '.3s';
+    bg.classList.remove('active-footer');
 });
 
 
 firstSvg1.addEventListener('mouseover', () => {
-    bg.style.background = ' rgb(129, 13, 195)';
-    bg.style.transition = '.3s';
+    bg.classList.add('active-footer1');
 });
 firstSvg1.addEventListener('mouseout', () => {
-    bg.style.background = '#111922';
+    bg.classList.remove('active-footer1');
 });
 
 firstSvg2.addEventListener('mouseover', () => {
-    bg.style.background = ' rgb(52, 106, 255)';
-    bg.style.transition = '.3s';
+    bg.classList.add('active-footer2');
 });
 firstSvg2.addEventListener('mouseout', () => {
-    bg.style.background = '#111922';
+    bg.classList.remove('active-footer2');
 });
 
 firstSvg3.addEventListener('mouseover', () => {
-    bg.style.background = '  rgb(126, 255, 52)';
-    bg.style.transition = '.3s';
+    bg.classList.add('active-footer3');
 });
 firstSvg3.addEventListener('mouseout', () => {
-    bg.style.background = '#111922';
+    bg.classList.remove('active-footer3');
 });
 
 // reviews
@@ -167,69 +162,73 @@ let menu = document.querySelector('.header-logo'),
 
     // article-open
 
-    let click = document.querySelector('.first-vakansy'),
-        cancleS = document.querySelector('.cancle'),
-        workOpen =  document.querySelector('.work-open');  
+        let workOpen =  document.querySelector('.work-open');  
         
-        click.addEventListener('click', (ds) => {
-            workOpen.style.opacity = '1';
-            workOpen.style.visibility = 'visible';
+        function clickS() {
+            workOpen.classList.add('work-opened');
             disable();
-        });
-    
-        cancleS.addEventListener('click', () => {
-            workOpen.style.opacity = '';
-            workOpen.style.visibility = '';
+        }
+        function cancleC() {
+            workOpen.classList.remove('work-opened');
             enable();
-        });
+        }
 
-        let click1 = document.querySelector('.second-vacansy'),
-        cancleS1 = document.querySelector('.cancle1'),
-        workOpen1 =  document.querySelector('.work-open1');
         
-        click1.addEventListener('click', (ds) => {
-            workOpen1.style.opacity = '1';
-            workOpen1.style.visibility = 'visible';
+        let workOpen1 =  document.querySelector('.work-open1');
+        
+        function clickS1() {
+            workOpen1.classList.add('work-opened');
             disable();
-        });
-    
-        cancleS1.addEventListener('click', () => {
-            workOpen1.style.opacity = '';
-            workOpen1.style.visibility = '';
+        }
+        function cancleC1() {
+            workOpen1.classList.remove('work-opened');
             enable();
-        });
+        }
 
-        let click2 = document.querySelector('.third-vacansy'),
-        cancleS2 = document.querySelector('.cancle2'),
-        workOpen2 =  document.querySelector('.work-open2');
+        
+        let workOpen2 =  document.querySelector('.work-open2');
 
-        click2.addEventListener('click', (ds) => {
-            workOpen2.style.opacity = '1';
-            workOpen2.style.visibility = 'visible';
+        function clickS2() {
+            workOpen2.classList.add('work-opened');
             disable();
-        });
-    
-        cancleS2.addEventListener('click', () => {
-            workOpen2.style.opacity = '';
-            workOpen2.style.visibility = '';
+        }
+        function cancleC2() {
+            workOpen2.classList.remove('work-opened');
             enable();
-        });
+        }
 
-        let click3 = document.querySelector('.fourth-vacansy'),
-        cancleS3 = document.querySelector('.cancle3'),
-        workOpen3 =  document.querySelector('.work-open3');
+        let workOpen3 =  document.querySelector('.work-open3');
 
-        click3.addEventListener('click', (ds) => {
-            workOpen3.style.opacity = '1';
-            workOpen3.style.visibility = 'visible';
+        function clickS3() {
+            workOpen3.classList.add('work-opened');
             disable();
-        });
-    
-        cancleS3.addEventListener('click', () => {
-            workOpen3.style.opacity = '';
-            workOpen3.style.visibility = '';
+        }
+        function cancleC3() {
+            workOpen3.classList.remove('work-opened');
             enable();
-        });
+        }
+        
+        let workOpen4 =  document.querySelector('.work-open4');
+
+        function clickS4() {
+            workOpen4.classList.add('work-opened');
+            disable();
+        }
+        function cancleC4() {
+            workOpen4.classList.remove('work-opened');
+            enable();
+        }
+
+        let workOpen5 =  document.querySelector('.work-open5');
+
+        function clickS5() {
+            workOpen5.classList.add('work-opened');
+            disable();
+        }
+        function cancleC5() {
+            workOpen5.classList.remove('work-opened');
+            enable();
+        }
 
 // news
         let newsClick = document.querySelector('.read'),
@@ -405,5 +404,5 @@ exist5.addEventListener('click', () => {
 //                 e.classList.remove('hide');
 //             });
 //         }
-//     }
+//     };
 // };

@@ -12,6 +12,7 @@
     font-weight: 700;
     cursor: pointer;
     transition: .3s;
+    /* margin-left: 7%; */
 }
 
 .burger__block-news img {
