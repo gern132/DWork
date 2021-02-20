@@ -231,6 +231,10 @@
     }
 }
 @media (max-width: 1000px) {
+    .arrow {
+        font-size: 40px !important;
+        left: 1% !important;
+    }
     .burger-cancle {
         width: 30px !important;
     }
